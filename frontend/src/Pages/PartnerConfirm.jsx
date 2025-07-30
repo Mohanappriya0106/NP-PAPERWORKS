@@ -22,7 +22,7 @@ const PartnerConfirm = () => {
   const handleAccept = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/confirm", {
+      const res = await fetch("https://np-paperworks-1.onrender.com/api/confirm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ partnerName, initiatorName, date }),
